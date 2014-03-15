@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+    <head>
+      <meta charset="UTF-8"/>
+   <title>fetsharef.cm/ub</title>
+   
+    <script language="javascript">
+          function alertMe(message){
+              alert(message)
+          }
+          alertMe("You are about to login to FETCHAREF!!")
+          function getListing()
+          {
+              var url = location.href
+              var lastSlash = url.lastIndexOf("/")
+              location.href = url.substring(0, lastSlash +1)
+          }
+          var mydate = new Date()
+          var mytime = mydate.getHours()
+            if (mytime < 12)
+                alert("Good Morning")
+               else{
+                 if (mytime < 17)
+                 alert("Good Afternoon")
+              else
+                  alert("Good Evening")
+               }
+               
+         PicArray = new Array("c++.png",)
+                 CurrentPic = 0
+                 ImageCount = PicArray.length - 1
+                 
+                 function MovePrevious() {
+                    if (document.images && CurrentPic > 0) 
+                      {
+                     CurrentPic--
+                     document.myPicture.src=PicArray[CurrentPic]
+                      }
+                   }  
+             function MoveNext() {
+                 if (document.images && CurrentPic < ImageCount) 
+                 {
+                 CurrentPic++
+                 document.myPicture.src=PicArray[CurrentPic]
+                 }
+             } 
+              
+    </script>
+   
+       <link rel="stylesheet" type="text/css" href="css/index.css"/>
+       </head> 
+  <body>
+  <header id="top-header"><h3>WECOME TO FETSHAREF&copy </h3> <p style="float: right;"><marquee><img src="pics/fetlogo.gif" height="30px" /></marquee></p>
+  </header>
+    
+   <ul >
+   <table id="tab">
+ 	<tr>
+ 		<td id="tdata"><img src="pics/cam.jpg" height="120px"/></td>
+ 		<td id="tdata"><img src="pics/ublogo.jpg" height="100px" /></td>
+ 		<td id="tdata"><img src="pics/fet.jpg" height="60px" /></td>
+ 		<td id="tdata"><img src="pics/micro.gif" height="100px"/></td> 
+ 		<td id="tdata"><img src="pics/fetlogo.gif" height="100px"/></td>
+    </tr>
+   </table>
+   </ul>
+     <div id="big-wraper">
+     
+       <frameset cols="200,*" rows="*" id="mainFrameset">
+        <hr/>
+      
+      <div id="new-div">
+        <aside id="side-news">
+         <center>
+          <hr/>
+         </a> 
+		  	<img src="pics/wash.gif" name="mypicture" alt="Slide Show" height="150px"></h1><br /><br />
+									
+		  	<img src="pics/fork.gif" name="pics" alt="Slide Show" height="200px">
+			  
+			  <p align="center">  <a href="linux.pdf"><strong>(READ BEGINING LINUX PROGRAMMING)</strong></a></p><hr />
+			  
+			  	 <p>  <a href="videomusic/skelewu.mp4"><strong><blink>(SKELEWU VIDEO ONLINE)</blink></strong></a></p><hr />
+						  
+		  			  <p>  <a href="music/mj.mp3"><strong> <blink>(ONLINE AUDIO)</blink></strong></a></p><hr />		
+             </aside>
+	 
+        <aside id="side-news1">
+          <section>
+            <hgroup>
+               <center> <h1>FET LOGIN </h1></center>
+            </hgroup>
+           
+   <form id="creat_account" action="login.php" method="post">
+   
+   <fieldset id="signup">
+    <legend>Login</legend>
+ <ul>
+       <li>
+         <label for="User_name">Username</label>
+           <input id="first_name" type="text" autofocus="true" name="first_name" placeholder="username" class="log" />
+       <li>
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password" value="" autocomplete="off" placeholder="8-10 characters" class="log"/>
+         
+          <input type="submit" value="Login">
+       </li>
+       </ul>
+   </fieldset><center>  
+          <a href="c_account.html"><p>Create A New account<p></a>  
+   </form>
+         </section>
+         <br /><hr/>
+         For any <strong><em>bug</em></strong> or dificulty faced, click and write via the <strong>
+         <a href="" title="Write to admin">ADMIN</a></strong> button above for rectification.<center>Thanks.
+		 
+         </hgroup>
+        </section><hr>
+      </aside>
+	  
+	         <aside id="side-news3">  
+  <caption><strong><center><h2>News Release</h2></center></strong></caption><hr />
+		
+         A place of inspiration, formation, reformation, innovation and perfection <strong>FET</strong> &dArr;
+         <hr/>
+        <section> 
+           <hgroup>
+         On behave of the <strong>authors</strong>, the admin wishes you to use this site mainly educational purposes.<hr />
+         </section>
+         
+
+      </aside>
+
+</frameset>
+        
+      </div>   
+        
+        <footer id="the-footer">
+		
+		 <p>  <nav id="top-menu">
+          <ul>
+             <a href="facebook.com"><li>FACEBOOK</a>
+              <a href="google.com"><li>GOOGLE</a>
+			  <A href="freesourcecode"><li>CODE</a>
+			  <a href="gmail.com"><li>GMAIL</a>
+              <a href="youtube.com"><li>YOUTUBE</a>
+              <a href="yahoomail.com"><li>YAHOO</a>
+              <a href="weatherforecast.com"><li>WEATHER</a>
+              
+          </ul>
+      </nav></p>
+          <p> copyright&copy the  2013 Faculty of Egineering and Technology (FET) Student Chat Room. UB. B.Eng. Proj.</p>
+		 
+        </footer>
+  </div>
+      
+  </body>
+</html>

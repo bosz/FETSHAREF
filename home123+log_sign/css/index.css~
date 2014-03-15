@@ -1,0 +1,141 @@
+
+  body{ background-image: url(../pics/back.GIF); }
+  #top-header {
+       text-align: center;
+	  // background-image: url(../pics/pthread.png);
+       color: #AA1F00;
+       border: 10px solid blue;
+       border-bottom: 6px;
+       padding:1px;
+       font: 35px solid;
+       text-decoration: blink;
+  }
+  #top-menu {
+       background:#9af;
+       color:black bold;
+       font:15px bold;
+       font-family: tahoma,sans-serif;
+       text-align: center;
+  }
+  #top-menu li {
+       display: inline-block;
+       list-style: none;
+       padding: 15px;
+       text-decoration:underline;
+       color: black;
+       text-align: center;
+  }
+  #big-wraper {
+       border: 1px solid black;
+       width:1000px;
+       margin: 20px auto;
+	   height: inherit;
+	   background-color:#C0DCC0;
+  }
+  #main-section {
+       float:left;
+       width:660;
+       margin:30px; /* 720px and 280 left*/
+  }
+  #side-news {
+       float: left;
+       width: 220px;
+       margin: 20px 0px;
+       padding: 30px;
+       background: #559FAA;
+       text-decoration: none;
+       margin-right: 10px;
+       border:10px   #D47F00 solid;
+  }
+  #side-news1 {
+       float: right;
+       width: 220px;
+       margin: 20px 0px;
+       padding: 30px;
+       background: #009966;
+       text-decoration: white;
+       margin-left: 10px; 
+       border: 10px  #7F5F00 solid;
+  }
+  
+   #side-news3 {
+   	  /*
+	  float: right; 
+	  width: 220px; 
+      margin: 20px 0px; 
+	  padding:230px; 
+      text-decoration: none; 
+	  margin-right:inherit;
+      border: 10px  #2A0055 solid;
+	  position: 400px;
+	  height:200px; 
+	*/
+   }
+
+  
+  section, p {
+       vertical-align: baseline;
+       margin: 0;
+       border: 0;
+       padding: 0;
+       font-size: 100%;
+       font-family: Tahoma, sans-serif;
+  }
+   #the-footer {
+       clear: both;
+	   background-color: #808080;
+       text-align: center;
+       padding: 20px;
+       font-size: 12px;
+       color: blue;
+       text-decoration:underline;
+   }
+   article{
+       background: #ddeaff;
+       border:1px solid grey;
+       padding:20px;
+       margin-bottom: 15px;
+   }
+   article footer {
+       text-align: right;
+   }
+   form {
+          background-color: #CC9999;
+   }
+   h1 {
+      text-decoration: blink;
+   }
+   #tab {
+       padding: inherit;
+       width: auto;
+       margin: auto;
+	   padding-left: inherit;
+	   padding-right: 50px;
+	   height: inherit;
+	   background-color: #AA00AA;
+	   /*border: 10px #2A0055; */
+   }
+  
+   #tdata {
+       width: 500px;
+       margin: 20px 0px;
+       padding:30px;
+       background: #A0A0A4;
+       text-decoration: none; 
+       border: thick #5500FF;
+	   background-position: right;
+	   position:relative;
+         }
+		 
+	#new-div {
+		background: #CCCC99;
+	}
+	
+	.log
+  {
+  	position: relative;
+  	right: 65px;
+  }
+  
+  ul { position: relative; list-style: none; left: 25px; }
+  #signup {	border-style: none; }

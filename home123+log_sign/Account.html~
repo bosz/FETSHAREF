@@ -1,0 +1,237 @@
+<html>
+<head>
+      <meta charset="UTF-8"/>
+   <title>fetsharef.cm/ub</title>
+   
+    <script language="javascript">
+          function alertMe(message){
+              alert(message)
+          }
+          alertMe("You are about to login to FETCHAREF!!")
+          function getListing()
+          {
+              var url = location.href
+              var lastSlash = url.lastIndexOf("/")
+              location.href = url.substring(0, lastSlash +1)
+          }
+          var mydate = new Date()
+          var mytime = mydate.getHours()
+            if (mytime < 12)
+                alert("Good Morning")
+               else{
+                 if (mytime < 17)
+                 alert("Good Afternoon")
+              else
+                  alert("Good Evening")
+               }
+               
+         PicArray = new Array("c++.png",)
+                 CurrentPic = 0
+                 ImageCount = PicArray.length - 1
+                 
+                 function MovePrevious() {
+                    if (document.images && CurrentPic > 0) 
+                      {
+                     CurrentPic--
+                     document.myPicture.src=PicArray[CurrentPic]
+                      }
+                   }  
+             function MoveNext() {
+                 if (document.images && CurrentPic < ImageCount) 
+                 {
+                 CurrentPic++
+                 document.myPicture.src=PicArray[CurrentPic]
+                 }
+             } 
+              
+    </script>
+   
+       <link rel="stylesheet" type="text/css" href="css/index.css"/>
+       
+  <header id="top-header"><h3>WECOME TO FETSHAREF&copy</h3><p style="float: right;" ><marquee><img src="pics/fetlogo.gif" height="30px" /></marquee></header>
+  <ul> <table id="tab">
+ <tr> <td id="tdata"><img src="pics/cam.jpg" height="120px"/><td id="tdata"><img src="pics/ublogo.jpg" height="100px" /></td></td> <td id="tdata"><img src="pics/fet.jpg" height="60px" /></td> <td id="tdata"><img src="pics/micro.gif" height="100px"/></td> <td id="tdata"><img src="pics/fetlogo.gif" height="100px"/></td>
+       </tr>
+    </table></ul>
+    
+  </head> 
+  <p align="center">
+       <link rel="stylesheet" type="text/css" href="css/Account.css"/>
+
+<title>fetsharef.cm/ub/create_account/?php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<table width="775" border="0" cellpadding="0" cellspacing="0">
+ 
+ 
+  <tr>
+    <td><table width="100%" border="0" cellpadding="3" cellspacing="0" bgcolor="#EAF1FF">
+        <tr> 
+          <td> 
+
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td><table border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td><table border="0" cellpadding="0" cellspacing="1" class="tb-bdr" >
+                <tr> 
+                  <td><table width="100%" border="0" cellpadding="2" cellspacing="0" class="tb-bg">
+                      <tr> 
+                        <td class="modtext">Register account</td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table></td>
+          </tr>
+          
+        </table></td>
+      <td><table border="0" align="right" cellpadding="3" cellspacing="0">
+          <tr class="normal">
+            <td><div align="right">Language:</div></td>
+            <td><select name="lang" class="normal" id="lang" onChange="change_lang()">
+        <OPTION value=English>English</OPTION>
+		        <OPTION value=French>French</OPTION>
+				
+              </select></td>
+         </tr>
+        </table></td>
+    </tr>
+  </table>
+  <table width="80%" border="0" align="center" cellpadding="1" cellspacing="0" bgcolor="#D3D9E6" class="tb-bdr" >
+  <tr> 
+    <td><table width="100%" border="0" cellpadding="5" cellspacing="0" class="tb-bg" align="right">
+        <tr> 
+          <td>
+              <p align="center">PLEASE FILL IN THE FOLLOWING BELOW<font color="#FF0000"></font></p><hr>
+              <table border="0" align="center" cellpadding="2" cellspacing="2">
+                <tr> 
+                  <td nowrap class="normal"><div align="right"> <font color="#FF0000">*</font> 
+                      FIRST NAME: </div></td>
+                  <td class="normal"><input name="username" type="text" class="normal" id="username" value="" size="32" maxlength="32" placeholder="4-32 characters">
+                    </td>
+                </tr>
+				 <tr> 
+                  <td nowrap class="normal"><div align="right"> <font color="#FF0000">*</font> 
+                      SECOND NAME: </div></td>
+                  <td class="normal"><input name="username" type="text" class="normal" id="username" value="" size="32" maxlength="32" placeholder="4-32 character">
+                   </td>
+                </tr>
+				
+				<tr>
+					<td nowrap class="normal"><div align="right"> <font color="#FF0000">*</font> 
+					DATE OF BIRTH:</td>
+		            <td><input type='date of birth' name='date of birth' type="text" size="10" maxlength="8" placeholder="dd/mm/yyyy"/></td></tr>
+		
+                <tr> 
+                  <td nowrap class="normal"><div align="right"><font color="#FF0000">*</font> 
+                      MATRICULE:</div></td>
+                  <td class="normal"><input name="matricule" type="text" class="normal" id="matricule" value="" maxlength="8" size="16"  placeholder="8 characters only">
+                    </td>
+                </tr>
+				 <tr> 
+                  <td nowrap class="normal"><div align="right"><font color="#FF0000">*</font> 
+                      USER NAME:</div></td>
+                  <td class="normal"><input name="user_name" type="text" class="normal" id="user_name" value="" maxlength="10" size="16" placeholder="10 characters max"></td>
+                </tr>
+				 <tr> 
+                  <td nowrap class="normal"><div align="right"><font color="#FF0000">*</font> 
+                      PASSWORD:</div></td>
+                  <td class="normal"><input name="password1" type="password" class="normal" id="password1" value="" maxlength="32" size="18" placeholder="32 characters max"></td>
+                </tr>
+				
+                <tr> 
+                  <td nowrap class="normal"><div align="right"><font color="#FF0000">*</font>
+                      COMFIRM PASSWORD:</div></td>
+                  <td class="normal"><input name="password2" type="password" class="normal" id="password2" value="" maxlength="32" size="18" placeholder="32 characters max"> </td>
+                </tr>
+				
+                ><tr> 
+                  <td nowrap class="normal"><div align="right"> <font color="#FF0000"></font> 
+                      PHONE NUMBER:</div></td>
+                  <td class="normal"><input name="phone" type="int" class="normal" id="phone" maxlength="12" size="32" placeholder="Numbers only. Example: 9xxxxxxxxxxx">
+                    </td>
+                </tr>
+              
+                <tr> 
+                  <td nowrap class="normal"><div align="right"><font color="#FF0000">*</font> 
+                      E-MAIL:</div></td>
+                  <td class="normal"><input name="email" type="text" class="normal" id="email" value="" maxlength="50" size="40" placeholder="fetsharef@fetsharef.com"></td>
+                </tr>
+				
+                <td nowrap class="normal"><div align="right"><font color="#FF0000"></font> 
+                      ADDRESS:</div></td>
+                  <td class="normal"><input name="address" type="text" class="normal" id="address" value="" maxlength="100" size="50" placeholder="Location of residence"></td>
+                </tr>
+                
+               
+                <tr> 
+                  <td nowrap class="normal"><div align="right"><font color="#FF0000">*</font> 
+                      COUNTRY:</div></td>
+				  
+                    <td class="normal"><select name="country" class="normal" id="country"> 
+                    	<OPTION SELECTED value=''></OPTION>
+                    		<OPTION value='Cameroon'>Cameroon</OPTION>
+                    		<OPTION value='Nigeria'>Nigeria</OPTION>
+                  </select>
+                    </strong></td>
+               </tr>
+				
+			   <tr> 
+               <td nowrap class="normal"><div align="right"> <font color="#FF0000">*</font> 
+                      SECURITY QUESTION:</div></td>
+                  <td class="normal"><select name="security question" class="normal" id="security question"> <OPTION SELECTED value=''></OPTION><OPTION value='Do you agree 22/7 is an endless decimal?'>Do you agree 22/7 is an endless decimal?</OPTION><OPTION value='Do you like electronics?'>Do you like electronics?</OPTION><OPTION value='Have you any laptop?'>Have you any laptop?</OPTION><OPTION value='Do you like FETSHAREF website?'>Do you like FETSHAREF website?</OPTION><OPTION value='Are you an Engineering?'>Are you an Engineer?</OPTION><OPTION value='What is your favourite sport?'>What is your favourite sport?</OPTION>
+                  <OPTION value='Did you know 0/0 = A where A is any positive interger?'>Did you know 0/0 = A where A is any positive interger?</OPTION>
+				  				                      
+                </td>
+                  
+				  <td> Yes: <input type='radio' name='boolean' value="yes" /></td>
+		<td> No: <input type='radio' name='boolean' value="no" /></td>
+				
+				<tr> 
+                  <td nowrap class="normal"><div align="right"><font color="#FF0000"></font> 
+                      PICTURE UPLOAD:</div></td>
+                  <td class="normal"><input name="pics" type="file" class="normal" id="pics" value="" maxlength="20" size="20"> 
+                  </td>
+                </tr>
+               </table>
+              <p align="center" class="normal"><font color="#FF0000">*</font>
+                Fields are mandatory!</p>
+              <p align="center" class="normal"> 
+                <textarea name="textarea" cols="65" rows="4" readonly>ATTENTION!: PLEASE READ THESE TERMS CAREFULLY BEFORE USING THIS WEBSITE. BY CHECKING THE BOX BELOW (I accept the Terms & Conditions) IMPLIES YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF FETSHAREF.  THE  TERMS AND CONDITION OF THE FETSHAREF </textarea>
+              </p>
+              <table border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr class="normal">
+                  <td><font color="#FF000">*</font><input name="acceptterms" type="checkbox" id="acceptterms" value="1" ></td>
+                  <td>I accept the Terms & Conditions </td>
+                </tr>
+              </table>
+              <p align="center" class="normal"> 
+                <input name="adduser" type="submit" id="adduser" value="Register_account">
+                
+                         </p>
+            </td>
+        </tr>
+        
+       
+      </table></td>
+  </tr>
+</table>
+        <span><a href="../home123+log_sign/index.html"> Return back to login</a></span>
+</form></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="2">
+        <tr> 
+          <td bgcolor="#CEDEFF" class="normal"><font color="#184470">
+             Version: <strong> | 1.0.0 |</strong> &copy; fetsharef 2014</font> 
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+  
+      </table></td>
+  </tr>
+</table>
+
+</body>
+</html>
